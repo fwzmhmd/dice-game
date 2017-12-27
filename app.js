@@ -40,7 +40,7 @@ document.querySelector('.btn-hold').addEventListener('click', function(){
 
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
 
-        if (scores[activePlayer] >= 20) {
+        if (scores[activePlayer] >= 100) {
             document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
             diceDom.style.display = 'none';
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
